@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Redstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Acasă</a></li>
+                    <li><a href="products.html" style="color:#008999;">Produse</a></li>
+                    <li><a href="contact.html">Contacte</a></li>
+                    <li><a href="account.html">Profil</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Toate produsele</h2>
+            <select id="sortOptions">
+                <option value="default">Sortare implicită</option>
+                <option value="price">Sortează după preț</option>
+                <option value="rating">Sortează după rating</option>
+            </select>
+        </div>
+
+        <div class="row" id="productContainer">
+            <div class="col-4">
+                <a><img src="images/product-11.jpg"></a>
+                <a href="products-details.html">
+                    <h4 id="productName">Ferestrău pendular 450W M4301 Makita</h4>
+                </a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="buy">
+                    <p>1000 mdl</p>
+                    <button class="btn-buy"
+                        onclick="addToCart('Ferestrău pendular 450W M4301 Makita', '1000 mdl', 'images/product-11.jpg')">Cumpără</button>
+                </div>
+
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="images/product-2.jpg"></a>
+                <h4>Ciocan rotopercutor Fixtec SDS Max FRH16001 1600w</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <div class="buy">
+                    <p>2500 mdl</p>
+                    <button class="btn-buy"
+                        onclick="addToCart('Ciocan rotopercutor Fixtec SDS Max FRH16001 1600w', '2500 mdl', 'images/product-2.jpg')">Cumpără</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="images/product-3.jpg"></a>
+                <h4>Ciocan rotopercutor Procraft BH1400</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="buy">
+                    <p>1200 mdl</p>
+                    <button class="btn-buy"
+                        onclick="addToCart('Ciocan rotopercutor Procraft BH1400', '1200 mdl', 'images/product-3.jpg')">Cumpără</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="images/product-10.jpg"></a>
+                <h4>Ciocan rotopercutor Fixtec 20V LI-ION (fara acumulator)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="buy">
+                    <p>1500 mdl</p>
+                    <button class="btn-buy"
+                        onclick="addToCart('Ciocan rotopercutor Fixtec 20V LI-ION (fara acumulator)', '1500 mdl', 'images/product-10.jpg')">Cumpără</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="images/product-5.jpg"></a>
+                <h4>Fen industrial 2000W HG651CK Makita</h4>
+                <div class="rating">
+                    <!--(before this added awesome4 cdn font link to the head)added a cdn link by searching font awesome4 icon and from the site  search the star entering the first option and getting a link of this fa-star*-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="buy">
+                    <p>5500 mdl</p>
+                    <button class="btn-buy"
+                        onclick="addToCart('Fen industrial 2000W HG651CK Makita', '5500 mdl', 'images/product-5.jpg')">Cumpără</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="images/product-7.jpg"></a>
+                <h4>Polizor unghiular Grand МШУ-125-1050</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="buy">
+                    <p>3450 mdl</p>
+                    <button class="btn-buy"
+                        onclick="addToCart('Polizor unghiular Grand МШУ-125-1050', '3450 mdl', 'images/product-7.jpg')">Cumpără</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="images/product-12.jpg"></a>
+                <h4>FCRS100LFX Ferestrau sabie 20V LI-ION (fara acumulator)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="buy">
+                    <p>1300 mdl</p>
+                    <button class="btn-buy"
+                        onclick="addToCart('FCRS100LFX Ferestrau sabie 20V LI-ION (fara acumulator)', '1300 mdl', 'images/product-12.jpg')">Cumpără</button>
+                </div>
+            </div>
+            <div class="col-4">
+                <a href="products-details.html"><img src="images/product-13.jpg"></a>
+                <h4>Fierăstrău de traforaj Kratos 406mm 127 mm</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <div class="buy">
+                    <p>1750 mdl</p>
+                    <button class="btn-buy"
+                        onclick="addToCart('Fierăstrău de traforaj Kratos 406mm 127 mm', '1750 mdl', 'images/product-13.jpg')">Cumpără</button>
+                </div>
+            </div>
+            <!-- More product divs... -->
+
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Ne puteți găsi la următoarele adrese:</h3>
+                    <p style="color: #555;">Strada Industriilor, Nr. 10, București</p>
+                    <p style="color: #555;">Bulevardul Unirii, Nr. 45, București</p>
+                    <p style="color: #555;">Strada Fabricii, Nr. 12, Cluj-Napoca</p>
+                    <p style="color: #555;">Strada Revoluției, Nr. 30, Timișoara</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p style="color: #555;">Compania noastră, Makita, este super apreciată pentru calitatea și
+                        fiabilitatea excepțională a sculelor electrice pe care le oferă.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Partenerii noștri</h3>
+                    <ul>
+                        <li><a href="https://www.metro.md/">Metro</a></li>
+                        <li><a href="https://supraten.md/materiale-de-constructie-16-ro">Supraten</a></li>
+                        <li><a href="https://nanu.md/ro/4-materiale-de-constructii">NANU Market</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr style="background: #555">
+            <p class="copyright" style="color: #555;">Copyright 2024 - Șova Gabriel</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        document.getElementById('sortOptions').addEventListener('change', function () {
+            const sortOption = this.value;
+            const productContainer = document.getElementById('productContainer');
+            const products = Array.from(productContainer.getElementsByClassName('col-4'));
+
+            if (sortOption === 'price') {
+                products.sort((a, b) => parseFloat(a.getAttribute('data-price')) - parseFloat(b.getAttribute('data-price')));
+            } else if (sortOption === 'rating') {
+                products.sort((a, b) => parseFloat(b.getAttribute('data-rating')) - parseFloat(a.getAttribute('data-rating')));
+            }
+
+            productContainer.innerHTML = '';
+
+            products.forEach((product, index) => {
+                setTimeout(() => {
+                    product.style.opacity = '1';
+                    productContainer.appendChild(product);
+                }, index * 200);
+            });
+        });
+
+        function addToCart(name, price, image) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name, price, image });
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+    </script>
+</body>
+
+</html>
